@@ -1,0 +1,50 @@
+<div class="quiz-area" ng-show="inProgress">
+	<div class="repeated-item" ng-show="!quizOver">
+			<!-- <text>Time: <text id="time001">200</text></text><br /> -->
+		<h2 id="question">{{question}}</h2>
+		<ul id="options">
+			<li ng-repeat="option in options">
+				<label>
+					<input class="w3-radio" type="radio" name="answer" value="{{option}}">
+					{{option}}
+				</label>
+			</li>
+		</ul>
+
+
+
+		
+		<button class="button"  ng-click="checkAnswer()" ng-show="answerMode">Submit</button>
+
+		<div ng-show="!answerMode">
+			<span ng-show="correctAns">
+				<div class="alert alert-success" role="alert">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> <strong>Success!</strong> You got it right :)
+				</div>
+			</span>
+			<span ng-show="!correctAns">
+				<div class="alert alert-danger" role="alert">
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> <strong>Oh snap!</strong> You got it wrong :(
+				</div>
+			</span>
+			<button ng-click="nextQuestion()" class="btn btn-lg btn-info next-question w3-btn w3-ripple">Next Question</button>
+			<button class="btn btn-lg btn-danger w3-btn w3-ripple" ng-click="reset()">Start Over</button>
+		</div>
+	</div>
+
+	<div ng-show="quizOver">
+		<h2>You've completed the Quiz!</h2>
+		<p>Congratulations! Share your score with friends and invite them to beat you ... if they can :)</p>
+		<a href="#" target="_blank" class="btn btn-lg btn-primary w3-btn w3-ripple"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Share Your Score</a>
+		<button class="btn btn-lg btn-default w3-btn w3-ripple" ng-click="reset()"><span class="glyphicon glyphicon-left" aria-hidden="true"></span> Play again</button>
+	</div>
+
+	<div id="score">
+		<span class="" ng-show="quizOver">Final </span>Score : {{score}} of {{options.length+1}}
+	</div>
+</div>
+
+<div class="intro" ng-show="!inProgress">
+	<p>The following quiz is written in AngularJS, is 5 questions long, all of which are AngularJS related. </p>
+	<button class="btn btn-lg btn-primary w3-btn w3-ripple" id="startQuiz" ng-click="start()"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Start the Quiz</button>
+</div>

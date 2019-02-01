@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="miniQuiz">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Quiz</title>
+
+	<!-- <script>document.write('<base href="' + document.location + '" />');</script> -->
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300,700" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic" />
+	<!-- QuizApp CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- W3 CSS -->
+	<link rel="stylesheet" href="css/style2.css">
+	<!-- QuizApp Scripts -->
+	
+	<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+	<script src="js/app.js"></script>
+
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-fixed-top" style="background-color: #A3A3A3;">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html" ng-click="reset()"><span class="glyphicon glyphicon-play" aria-hidden="true"></span>QuizApp</a>
+		</div>
+	</div>
+</nav>
+
+<div class="container theme-showcase" role="main">
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+		<h1>QuizApp</h1>
+		<p>AngularJS Quiz App</p>
+	</div>
+	<!-- <div ui-view></div> -->
+	
+	<quiz/>
+
+</div><!--/ .container -->
+
+<footer>
+	<p>Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> in <a href="https://github.com/ShivrajMohite" target="_blank">Shivraj</a></p>
+</footer><!--/ footer -->
+
+</body>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+</html>
