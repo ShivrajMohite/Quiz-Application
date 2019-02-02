@@ -3,7 +3,7 @@
 ## Screenshots -
 
 ## Home:
-![1](https://user-images.githubusercontent.com/34600724/52150319-9a2af580-2695-11e9-9a05-89a339ca3ccb.jpg)<br>
+![1](https://user-images.githubusercontent.com/34600724/52160258-1b0ae100-26d8-11e9-91d1-58287b083119.jpg)<br>
 
 ## Quetions:
 ![2](https://user-images.githubusercontent.com/34600724/52150324-9e571300-2695-11e9-9ba0-e27fc0506d4d.jpg)<br>
